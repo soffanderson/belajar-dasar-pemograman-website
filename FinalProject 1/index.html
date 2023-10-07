@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home | Soffan's Blog</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <!-- NAV -->
+            <nav>
+                <div class="nav-bar" id="nav-container">
+                    <a href="#home" class="active">SOFFAN</a>
+                    <a href="#content">Artikel</a>
+                    <a href="#unduh">Unduh</a>
+                    <a href="#about">Profile</a>
+                    <a href="#komentar">Komentar</a>
+                    <a href="#about" class="login">LOGIN</a>
+                    <button class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <!-- end NAV -->
+
+            <!-- SEARCH -->
+            <div class="nav-search">
+                <div class="jam"><span id="jam"></span></div>
+
+                <div class="marquee">
+                    Selamat datang, <br><span id="nama"></span>
+                </div>
+
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="search here..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <!-- Slide Show -->
+            <div class="slideshow">
+                <div class="slideshow-container slide-left">
+                    <h1>WELCOME TO<br>MY PERSONAL BLOG</h1>
+                    <p>Blog yang sengaja didesain flat dan simpel.</p>
+                </div>
+
+                <div class="slideshow-container slide-right">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/images/slider-1.jpeg" alt="Gambar pil">
+                        <div class="text">Welcome to Tutorials Point</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/images/slider-2.webp" alt="Gambar balok">
+                        <div class="text">Start your Learning Today !</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/images/slider-3.webp" alt="Gambar kursi stadion">
+                        <div class="text">About Us</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- Content -->
+            <div class="content" id="content">
+                <article>
+                    <div class="post">
+                        <div class="img-post">
+                            <img src="assets/images/artikel-memory.jpg" alt="boneka danbo menatap cahaya">
+                        </div>
+                        <div class="tumnail">
+                            <span class="judul">
+                                Lima Tahun Yang Terlupa
+                            </span>
+                            <span class="tanggal">2022, 1 Maret</span>
+                            <span class="konten">
+                                5 tahun yang terlupa - Ya.. akhirnya gue sadar sudah banyak yang gue lupakan selama 5
+                                tahun belakangan ini, yg juga menyangkut kenangan masa kecilku juga. Kembali ke 5 tahun
+                                sebelumnya dimana gue masuk kedalam dunia yang bertolak belakang terhadap kehidupan luar
+                                yang liar, dunia yang hanya diisi dengan kegiatan yang membosakan namum berkesan, tempat
+                                dimana jati diri di bentuk, tempat yang bisanya disebut sebagai "penjara suci"... ya..
+                                Pesantren..
+
+                                Setelah lulus dari sekolah dasar, gue masuk ke pesantren untuk menempuh pendidikan di
+                                bawah naungan iman, dimana disana bukan saja dididik mengenai pelajaran tapi juga
+                                dididik soal agama. Hidup di pesantren susah-susah gampang, kita hanya mengikuti aturan
+                                dan dengan begitu kita akan hidup didalamnya dengan nyaman, tapi.. mengikuti aturan tak
+                                segampang yang kalian pikirkan.. banyak peraturan yang bertentangn dengan kehendak kita
+                                sebagai manusia yang haus akan kebebasan.. pola pikir kita yang masih muda (anak-anak)
+                                yang ingin tahu segala hal berubaha menjadi sifat perlawanan akan keingintahuan,
+                                pengekangan yang dilakukan yg bertujuan baik untuk kita di bantah atau
+                                dilanggar....<br><br>
+                                <a href="">Baca Selengkapnya >></a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="post">
+                        <div class="img-post">
+                            <img src="assets/images/artikel-wanit-perjuangan.jpg" alt="boneka danbo menarik tali">
+                        </div>
+                        <div class="tumnail">
+                            <span class="judul">
+                                Wanita & Perjuangan
+                            </span>
+                            <span class="tanggal">2022, 30 Februari</span>
+                            <span class="konten">
+                                Assalamuaikum, wr wb..
+                                Gue pernah baca sebuah artikel di internet yang menceritakan tetang seorang cowok yang
+                                berusaha mati-matian berjuang untuk cinta yaitu pacarnya sendiri. Dia rela berangkat
+                                pagi hari menuju tempat ceweknya tinggal, tempatnya sangat jauh sekitar 1 jam perjalanan
+                                hanya untuk bertemu saja dan dia melakukan itu bukan cuma sekali tapi hampir setiap
+                                hari. Rasa cintanya yg bergitu besar tak membuat jarak yang terbentang menghalanginya.
+
+                                Hingga pada suatu hari ketika sang cowok telah menjumpai ceweknya dan hendak kembali
+                                pulang ke tempat tinggalnya, ban sepeda motor si cowok bocor padahal perjalanan msh
+                                sangat jauh. Si cowok pun mencari tukang tambal ban di dekat sana tetapi dia baru
+                                menyadari bahwa dia tidak memiliki uang lagi karena dihabis...<br><br>
+                                <a href="">Baca Selengkapnya >></a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Page Halaman -->
+                <div class="page">
+                    <a class="num">1</a>
+                    <a class="num">2</a>
+                    <a class="num">3</a>
+                    <span class="span">...</span>
+                    <a class="num">End</a>
+                </div>
+            </div>
+
+            <!-- Aside -->
+            <aside>
+                <div class="profile" id="about">
+                    <h2>Profile</h2>
+                    <br>
+                    <img src="assets/images/profile.jpg" class="foto" alt="foto profile">
+                    <br><br>
+                    <figcaption>Dipanggil Soffan.</figcaption>
+                    <br>
+                    <p>Tak kenal maka tak sayang, tak sayang maka tak dekat. Perkenalan adalah awalan dari kisah saling
+                        melupakan.</p>
+                    </header>
+                    <section>
+                        <h3>Biodata</h3>
+
+                        <table class="tabel">
+
+                            <tr>
+                                <th>Nama</th>
+                                <td>:</td>
+                                <td>Soffan Marsyus Hidayat</td>
+                            </tr>
+                            <tr>
+                                <th>TTL</th>
+                                <td>:</td>
+                                <td>Jakarta, 14 Juli 1996</td>
+                            </tr>
+                            <tr>
+                                <th>Alamat</th>
+                                <td>:</td>
+                                <td>Tanah Laut, Kalsel</td>
+                            </tr>
+                            <tr>
+                                <th>Join dicoding</th>
+                                <td>:</td>
+                                <td>15 Juni 2022</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>:</td>
+                                <td>s.btudz@gmail.com</td>
+                            </tr>
+                        </table>
+                    </section>
+            </aside>
+            <!-- End Content -->
+        </main>
+        <!-- End main -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="footer-container">
+                    <!-- Komentar -->
+                    <div class="kolom1" id="komentar">
+                        <div class="tumnail">
+                            <span class="judul">
+                                Komentar
+                            </span>
+                            <hr color="red" style="width: 50px;">
+                            <!-- Mulai -->
+                            <span class="tanggal">2022, 1 Maret</span>
+                            <span class="komentar">
+                                <b>Andrean:</b>
+                                Wah sangat menginspirasi banget kak, semoga ane bisa...
+                                <span><a href="http://">Lihat >></a></span>
+                            </span>
+                            <span class="tanggal">2022, 1 Maret</span>
+                            <span class="komentar">
+                                <b>John:</b>
+                                Nice artikel kak, jadi betah mampir disini, oh iya kak,...
+                                <span><a href="http://">Lihat >></a></span>
+                            </span>
+                            <span class="tanggal">2022, 1 Maret</span>
+                            <span class="komentar">
+                                <b>Siti:</b>
+                                Kak, nanti mampir ke blog aku juga yaa...
+                                <span><a href="http://">Lihat >></a></span>
+                            </span>
+                            <!-- End -->
+                        </div>
+                    </div>
+                    <!-- End Komentar -->
+
+                    <!-- Download -->
+                    <div class="kolom2" id="unduh">
+                        <div class="tumnail">
+                            <span class="judul">
+                                Download
+                            </span>
+                            <hr color="red" style="width: 50px;">
+                            <!-- Mulai -->
+                            <ul>
+                                <li><a href="/">eBooks</a></li>
+                                <li><a href="/">Poster</a></li>
+                                <li><a href="/">Kalender</a></li>
+                            </ul>
+                            <!-- End -->
+                        </div>
+                    </div>
+                    <!-- End Komentar -->
+                </div>
+                <div class="copyr">
+                    © Copyright 2022, All Rights Reserved | Made with <img width="13" alt="Love Heart symbol"
+                        src="assets/images/Love_Heart_symbol.png">
+                    By Soffan
+                </div>
+        </footer>
+
+        <!-- End Container -->
+    </div>
+
+
+    <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>
